@@ -15,7 +15,7 @@ export default function NaviBar(props) {
 	const navigate = useNavigate();
 
 	useEffect(() => {
-		Axios.get("http:localhost:8000/user/isLoggedIn")
+		Axios.get("/user/isLoggedIn")
 			.then((response) => {
 				setUsername(response.data.username);
 				if (props.setUsername) {

@@ -20,8 +20,8 @@ ReactDOM.render(
 	<div>
 		<BrowserRouter>
 			<Routes>
-				<Route path={"/homee"} element={<App />} />
-				<Route path="/" element={<Navigate replace to="/homee" />} />
+				<Route path={"/home"} element={<App />} />
+				<Route path="/" element={<Navigate replace to="/home" />} />
 				<Route path={"/login"} element={<Login />} />
 				<Route path={"/signup"} element={<Signup />} />
 				<Route path="/game/:gameTitle" element={<GamePage />} />
